@@ -3,7 +3,7 @@ randomfinder
 
 Finds random seeds to match strings.
 
-==Why it's useful==
+##Why it's useful
 
 You can protect your strings by using this method.
 For example (protected):
@@ -16,10 +16,10 @@ Unprotected:
 String visible = "hi";
 ```
 
-==Note==
+##Note
 
 This is not designed to work with large strings. It works with about 4 characters best (sometimes with 5 and 6, but takes a lot longer to find). I also have it to where you could theoretically use it with ```long``` instead of ```int```, but you would have to do a little playing around to get it. If you want to use it with strings > 4 or 5 characters, simply break them up into segments.
 
-==License Note==
+##License Note
 
 It's still licensed under MIT, but you don't **have** to credit me.
