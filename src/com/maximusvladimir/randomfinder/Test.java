@@ -58,7 +58,6 @@ public class Test extends JFrame {
 		
 		txtpncodeWillGenerate = new JTextPane();
 		txtpncodeWillGenerate.setFont(new Font("Courier New", Font.PLAIN, 10));
-		txtpncodeWillGenerate.setEditable(false);
 		txtpncodeWillGenerate.setText("(Code will generate here)");
 		txtpncodeWillGenerate.setBounds(10, 141, 298, 90);
 		getContentPane().add(txtpncodeWillGenerate);
@@ -108,7 +107,7 @@ public class Test extends JFrame {
 	private void genCode() {
 		String pieces = "";
 		for (int i = 0; i < scanner.getString().length(); i++) {
-			pieces += "((char)(rand.nextInt(96)+32))";
+			pieces += "((char)(rand.nextInt(96)+32)) + \"\"";
 			pieces += " +";
 		}
 		if (scanner.getString().length() >= 1)
